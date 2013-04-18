@@ -70,10 +70,6 @@ body {
 	font-size: 13pt;
 	font-weight: 300;
 }
-#wrapper, #welcomewrapper {
-	width: 1600px;
-	padding: 0 10px;
-}
 header {
 	width: 100%;
 	height: 150px;
@@ -84,11 +80,14 @@ footer {
 	background-color: #4A3110;
 	height: 200px;
 }
+aside {
+	margin-right: 10px;	
+}
 footer #spacer {
 	clear: both;
 	margin-top: 200px;	
 }
-article {
+section {
 	clear: both;
 	width: 100%;
 }
@@ -218,7 +217,7 @@ h1 {
 	The News	
 --------------------------------------------------------------------*/
 #news {
-	padding-right: 30px;
+	/*padding-right: 20px;*/
 }
 #news .rubrik {
 	font-size: 33pt;
@@ -229,6 +228,7 @@ h1 {
 #news .story {
 	background-color:rgba(0,0,0,0.5);
 	margin-bottom: 50px;	
+	padding: 20px;
 }
 #news p {
 	clear: both;
@@ -447,7 +447,7 @@ and (max-width : 1024px) {
 	}
 	aside {
 		float: right;
-		width: 50%;	
+		width: 48%;	
 	}
 	#videobox, #tour, #twitter, #flickr_images {
 		width: 100%;
@@ -487,7 +487,7 @@ and (max-width : 1600px) {
 	}
 	aside {
 		float: right;
-		width: 50%;	
+		width: 48%;	
 	}
 	#videobox {
 		width: 100%;
@@ -531,7 +531,7 @@ and (min-width : 1601px) {
 	}
 	aside {
 		float: right;
-		width: 50%;	
+		width: 48%;	
 	}
 	#videobox {
 		width: 100%;

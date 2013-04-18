@@ -1,6 +1,5 @@
-			<footer>
-				<canvas id="theLogo" width="200" height="200"></canvas>
-			</footer>
-		</div> <!-- END WRAPPER -->
+		<footer>
+			<canvas id="theLogo" width="200" height="200"></canvas>
+		</footer>
 	</body>
 </html>
