@@ -1,5 +1,5 @@
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	Styles used on DP3: Projektet
+	Styles used on DP3: The Project
 	URL: http://crille.org/rwd
 	Course: Reponsiv Webdesign (WD450F)
 	
@@ -316,9 +316,10 @@ h1 {
 	Flickr Images
 --------------------------------------------------------------------*/
 #images {
-	background-color:rgba(0,0,0,0.5);
+	background-color: #c00; /*rgba(0,0,0,0.5);*/
+	clear: both;
 }
-.images_image {
+.flickr_image {
 	float: left; 
 	margin-right: 15px;	
 }

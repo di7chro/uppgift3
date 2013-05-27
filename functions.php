@@ -138,7 +138,7 @@ function getTour() {
 		print '		<div class="day">' . $day . '</div>' . PHP_EOL;
 		print '	</div> <!-- END TIME -->' . PHP_EOL;
 		print '	<div class="stadium">' . $stadium. '</div>' . PHP_EOL;
-		print '	<div class="city"><a href="http://maps.google.com/maps?q=' . urlencode($city) . '" target="_blank">' . $city. '</a></div>' . PHP_EOL;
+		print '	<div class="city"><img src="img/map_pin.png" alt="Google Maps" width="12" height="20" /><a href="http://maps.google.com/maps?q=' . urlencode($city) . '" target="_blank">' . $city. '</a></div>' . PHP_EOL;
 		print '</div> <!-- END TOURDATE -->' . PHP_EOL . PHP_EOL;
 		
 	}	
@@ -164,7 +164,7 @@ function getImages() {
 		if(strstr ($image->getAttribute('src'), "_m.jpg")) {
 			if($i++ >= $maxImages) break;
 			print '<div class="flickr_image">' . PHP_EOL;
-			print "	<img src=" . $image->getAttribute('src') . " alt=". $image->getAttribute('alt') ."/>" . PHP_EOL;
+			print '	<img src="' . $image->getAttribute('src') . '" alt="'. $image->getAttribute('alt') .'"/>' . PHP_EOL;
 			print '</div> <!-- END FLICKR_IMAGE -->' . PHP_EOL . PHP_EOL;
 		}
 } 

@@ -4,7 +4,7 @@
 	</article> <!-- END NEWS -->
 	<aside>
 		<article id="videobox">
-			<iframe src="http://www.youtube.com/embed/X2u6DeXvLDM?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+			<iframe src="http://www.youtube.com/embed/X2u6DeXvLDM?rel=0&amp;hd=1" allowfullscreen></iframe>
 		</article> <!-- END VIDEOBOX -->
 		<article id="tour">
 			<script>getContent('tour');</script>

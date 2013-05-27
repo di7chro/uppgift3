@@ -1,6 +1,7 @@
 <?php
-  try
-  {
+  /*
+	try
+	{
     //open the database
     $db = new PDO('sqlite:/webbroot/blog/uppgift3/db/br_news.sqlite');
     $db = new PDO('sqlite:db/br_news.sqlite');
@@ -35,4 +36,5 @@
   {
     print 'Exception : '.$e->getMessage();
   }
+  */
 ?>
