@@ -12,8 +12,13 @@
 		<article id="twitter">
 			<script>getContent('twitter');</script>
 		</article> <!-- END TWITTER -->
+		<!--
+		På grund av att Flickr i dagarna bytt layout på sina sidor kan jag inte
+		längre extrahera ut bildinformation på det sättet som tidigare fungerat.
+		Därför är bilderna från Flickr inaktiverade för tillfället.
+		Hade ingen lust att skaffa en API-nyckel som hade löst alla problem.
 		<article id="images">
 			<script>getContent('images');</script>
-		</article> <!-- END FLICKR_IMAGES -->
+		</article> <!-- END IMAGES -->
 	</aside>
 </section>

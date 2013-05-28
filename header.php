@@ -40,7 +40,6 @@
 						</ul>
 					</li>
 					<li><a href="#">Store</a></li>
-					<li><a href="#">Login</a></li>
 				</ul>
 			</nav> <!-- END LINKS -->
 		</header>

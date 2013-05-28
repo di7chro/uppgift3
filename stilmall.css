@@ -74,18 +74,8 @@ header {
 	width: 100%;
 	height: 150px;
 }
-footer {
-	clear: both;
-	width: 100%;
-	background-color: #4A3110;
-	height: 200px;
-}
 aside {
 	margin-right: 10px;	
-}
-footer #spacer {
-	clear: both;
-	margin-top: 200px;	
 }
 section {
 	clear: both;
@@ -106,8 +96,62 @@ a:hover{
 header #site_logo {
 	float: left;
 	margin-top: 30px;
+	padding-left: 20px;
 	width: 39%;
 }
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Footer stuff
+--------------------------------------------------------------------*/
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #000;
+	height: 300px;
+	color: #fff;
+	opacity: 0.7;	
+}
+footer #spacer {
+	clear: both;
+	margin-top: 200px;	
+}
+
+footer .footerbox {
+	width: 25%;
+	float: left; 
+	padding: 10px;
+}
+footer .login {
+	background-color: #red;	
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Login stuff
+--------------------------------------------------------------------*/
+#login_form {
+
+}
+#login_form legend {
+	margin-bottom: 30px;	
+}
+
+#login_form label{
+	
+}
+
+#login_form input{
+	border: 2px solid red;
+	background-color: #222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13pt;
+	font-weight: 300;
+	color: #eee;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Navigation
 --------------------------------------------------------------------*/
@@ -189,6 +233,11 @@ h1 {
 	font-size: 30pt;
 	margin-bottom: 15px;
 }
+h2 {
+	font-size: 24pt;
+	margin-bottom: 15px;
+}
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	The welcome screen
@@ -384,11 +433,12 @@ and (max-width : 480px) {
 	#videobox {
 		display: none;
 	}
-	#news, #tour, #twitter, #flickr_images, aside, {
+	#news, #tour, #twitter, #flickr_images, aside, footer .footerbox{
 		width: 100%;
 		clear: both;
 		margin-bottom: 100px;
 	}
+	footer .footerlogo {display: none;}
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -453,6 +503,9 @@ and (max-width : 1024px) {
 	#videobox, #tour, #twitter, #flickr_images {
 		width: 100%;
 		clear: both;
+	}
+	footer .footerbox {
+		width: 48%;
 	}
 }
 
@@ -551,6 +604,5 @@ and (min-width : 1601px) {
 	}
 	footer {
 		background-color: #000;
-		opacity: 0.5;
 	}
 }

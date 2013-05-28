@@ -22,7 +22,6 @@ if(isset($_POST['action']) && !empty($_POST['action'])) {
 }
 
 
-
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Gets a Twitter Feed
 	INPUT:	none
@@ -47,6 +46,7 @@ function getTweets() {
 	  print '</div> <!-- END TWEET -->' . PHP_EOL . PHP_EOL;
 	}
 }
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Pretty-fies the timestamp from Twitter
@@ -81,6 +81,7 @@ function prettyTime($a) {
 	}
 }
 
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Finds links in the tweet and returns the tweet with links
 	INPUT:	String of tweet from the JSON-formatted text 
@@ -94,6 +95,7 @@ function fixLinks($ret) {
 	$ret = preg_replace("/#(\w+)/", "<a href=\"http://search.twitter.com/search?q=\\1\" target=\"_blank\">#\\1</a>", $ret);
 	return $ret;
 }
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Get tour location and time from official RSS
@@ -144,6 +146,7 @@ function getTour() {
 	}	
 } 
 
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Gets images from the Flickr Page
 	INPUT:	HTML page
@@ -151,9 +154,9 @@ function getTour() {
 	RETURNS:	Photos from Flickr
 --------------------------------------------------------------------*/
 function getImages() {
-	$maxImages = 6;	// How many upcoming dates do we want
+	$maxImages = 6;	// How many images do we want
 	$i=0;	
-	$url="http://www.flickr.com/photos/badreligion/page7/";	
+	$url="http://www.flickr.com/photos/badreligion/";	
 	$html = file_get_contents($url);
 	print '<h1>Flickr Images</h1>'. PHP_EOL;
 	$doc = new DOMDocument();
@@ -161,6 +164,13 @@ function getImages() {
 	$allImages = $doc->getElementsByTagName('img');
 		
 	foreach ($allImages as $image)
+		/*
+		Work in Progress... Flickr decided to relayout their images and this script
+		Does not work not...
+		
+		$newSrc = $image->getAttribute('style');
+		echo "SRC:" . $newSrc . PHP_EOL;
+		*/
 		if(strstr ($image->getAttribute('src'), "_m.jpg")) {
 			if($i++ >= $maxImages) break;
 			print '<div class="flickr_image">' . PHP_EOL;
@@ -168,6 +178,7 @@ function getImages() {
 			print '</div> <!-- END FLICKR_IMAGE -->' . PHP_EOL . PHP_EOL;
 		}
 } 
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Reads the newsflow from a SQLite database
