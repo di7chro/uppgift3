@@ -19,6 +19,6 @@
 		Hade ingen lust att skaffa en API-nyckel som hade löst alla problem.
 		<article id="images">
 			<script>getContent('images');</script>
-		</article> <!-- END IMAGES -->
+		</article> < ! - - END IMAGES -->
 	</aside>
 </section>

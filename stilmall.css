@@ -55,8 +55,8 @@ ol, ul {
 	Use Box Sizing on all elements used for layout.
 --------------------------------------------------------------------*/
 div, article, section, header, footer {
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	/*-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	/*-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
@@ -121,9 +121,6 @@ footer .footerbox {
 	float: left; 
 	padding: 10px;
 }
-footer .login {
-	background-color: #red;	
-}
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	Login stuff
@@ -146,7 +143,7 @@ footer .login {
 	font-size: 13pt;
 	font-weight: 300;
 	color: #eee;
-	-moz-border-radius: 5px;
+	/*-moz-border-radius: 5px; */
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
@@ -233,7 +230,9 @@ h1 {
 	font-size: 30pt;
 	margin-bottom: 15px;
 }
-h2 {
+.sideheader {
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-weight: 400;
 	font-size: 24pt;
 	margin-bottom: 15px;
 }
@@ -252,7 +251,7 @@ h2 {
 	font-size: 70pt;
 	color: #eee;
 	text-shadow: 4px 4px #333333;
-	-webkit-text-stroke: 1px #f00;
+	/*-webkit-text-stroke: 1px #f00;*/
 }
 #welcomebox img {
 	margin: 20px 0;	
